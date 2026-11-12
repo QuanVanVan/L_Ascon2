@@ -1,0 +1,35 @@
+# ---- KHONG dua len kho: moi tep duoi day do ma nguon SINH RA khi chay (build_all.sh), hoac la tep may ca nhan
+USERPROFILE/
+**/USERPROFILE/
+*.exe
+__pycache__/
+*.pyc
+tmp/
+
+# smrm/: ma sinh tu finalists.txt
+smrm/smrm_gen.h
+
+# results/: chi giu tham so 6 ung vien (dau vao); con lai la ket qua chay (ma tran, quet vet, log ...)
+/results/*
+!/results/02_finalists/
+/results/02_finalists/*
+!/results/02_finalists/finalists.txt
+
+# trailtool/
+trailtool/bin/
+trailtool/tests/smrm_vectors.txt
+*TrailCores*
+
+# ascon_aead_demo/: KAT tu sinh + log
+ascon_aead_demo/results/
+
+# esp32_demo/: sinh boi gen_layers.py, build PlatformIO, anh nap, goi zip, log Serial
+esp32_demo/ascon_esp32/layers_gen.h
+esp32_demo/pc/layers_spec.py
+esp32_demo/pc/ascon_aead.py
+esp32_demo/.pio/
+esp32_demo/.vscode/
+esp32_demo/prebuilt/
+esp32_demo/dist/
+esp32_demo/logs/
+platformio-device-monitor-*.log
